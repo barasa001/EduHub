@@ -1,4 +1,4 @@
-const { PrismaClient} = require("@prisma/client");
+const { PrismaClient } = require("@prisma/client");
 
 const database = new PrismaClient();
 
@@ -25,7 +25,7 @@ async function main() {
             { name: "Media and Journalism" },
         ]
       });
-       console.log("Success");
+      console.log("Success");
     } catch (error) {
         console.log("Error seeding the database categories", error);
     } finally {

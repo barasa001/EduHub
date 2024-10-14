@@ -1,9 +1,6 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
   previewFeatures = ["fullTextIndex", "fullTextSearch"]
@@ -14,7 +11,8 @@ datasource db {
   url      = env("DATABASE_URL")
   relationMode = "prisma"
 }
- model Course {
+
+model Course {
   id String @id @default(uuid())
   userId String
   title String @db.Text
@@ -28,21 +26,21 @@ datasource db {
 
   chapters Chapter[]
   attachments Attachment[]
-  purchases Purchase []
+  purchases Purchase[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   @@index([categoryId])
- }
+}
 
- model Category{
+model Category {
   id String @id @default(uuid())
   name String @unique
   courses Course[]
- }
+}
 
- model Attachment {
+model Attachment {
   id String @id @default(uuid())
   name String
   url String @db.Text
@@ -54,9 +52,9 @@ datasource db {
   updatedAt DateTime @updatedAt
 
   @@index([courseId])
- }
+}
 
- model Chapter {
+model Chapter {
   id String @id @default(uuid())
   title String
   description String? @db.Text
@@ -76,19 +74,18 @@ datasource db {
   updatedAt DateTime @updatedAt
 
   @@index([courseId])
- }
+}
 
- model MuxData {
+model MuxData {
   id String @id @default(uuid())
   assetId String
   playbackId String?
 
   chapterId String @unique
-  chapter Chapter @relation(fields: [chapterId], references: [id],onDelete: Cascade)
-  
- }
+  chapter Chapter @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+}
 
- model UserProgress {
+model UserProgress {
   id String @id @default(uuid())
   userId String
 
@@ -102,26 +99,27 @@ datasource db {
 
   @@index([chapterId])
   @@unique([userId, chapterId])
- }
+}
 
- model Purchase {
+model Purchase {
   id String @id @default(uuid())
   userId String
 
   courseId String
-  course Course @relation(fields: [courseId], references: [id],onDelete: Cascade)
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt ()
+  updatedAt DateTime @updatedAt
 
   @@index([courseId])
- }
+  @@unique([userId, courseId]) // Composite unique key for userId and courseId
+}
 
- model StripeCustomer {
+model StripeCustomer {
   id String @id @default(uuid())
   userId String @unique
   stripeCustomerId String @unique
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt()
- }
+}
