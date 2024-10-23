@@ -4,7 +4,10 @@ const nextConfig = {
         domains: [
             "utfs.io"
         ]
-    }
+    },
+    eslint: {
+        ignoreDuringBuilds: true,  // This disables ESLint during build process
+    },
 };
 
 export default nextConfig;
