@@ -2,6 +2,12 @@
 
 EduHub is a comprehensive Learning Management System (LMS) built to enhance online learning by providing an intuitive platform for both students and teachers. Designed using cutting-edge technologies like Next.js, React, and Prisma, EduHub offers a rich feature set that makes it easy to create, manage, and access educational content. This platform includes course browsing, video processing, and secure payment options, making it ideal for institutions and independent educators looking to provide high-quality, engaging learning experiences.
 
+## Repository
+
+You can find the source code for this Learning Management System (LMS) on GitHub:
+
+[EduHub Repository](https://github.com/barasa001/EduHub.git)
+
 ## Technologies Used
 
 - **Frontend**: Next.js, React, Tailwind CSS
