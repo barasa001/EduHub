@@ -89,10 +89,7 @@ npx prisma db push
 npm run dev
 ```
 
-## Available commands
+## APP INTERFACES
 
-Running commands with npm `npm run [command]`
+![Teacher Dashboard](./images/teacherdashboard.PNG)
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
