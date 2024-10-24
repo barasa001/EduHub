@@ -134,7 +134,6 @@ The Learning Management System (LMS) will be hosted on a local server to ensure 
 
 9. **User Access**: Once deployment and testing are complete, users will be granted access to the LMS through the local network. Detailed instructions and access credentials will be provided to authorized users.
 
-This deployment plan outlines the specific technologies and configurations required to successfully host the LMS on a local server.
 
 
 ## VIDEO DEMO
