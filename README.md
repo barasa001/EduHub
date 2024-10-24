@@ -106,5 +106,5 @@ npm run dev
 ### Chapter Setup Page
 ![Chapter Setup](./images/chaptersetup.PNG)
 
-### Teacher Analytics Page
+### Teacher Analytics
 ![Analytics Page](./images/teacheranalyticspage.PNG)
