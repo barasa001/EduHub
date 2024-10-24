@@ -113,4 +113,5 @@ npm run dev
 ![Course enroll Page](./images/courseenroll.PNG)
 
 ## VIDEO DEMO
-[Watch the video](./videos/loom-video.mp4)
+[Watch the video](https://www.loom.com/share/ba02df760a664987847143e196114aa4?sid=a775d46b-c12d-4a6d-8ed7-67680b9309f2)
+
