@@ -108,3 +108,9 @@ npm run dev
 
 ### Teacher Analytics
 ![Analytics Page](./images/teacheranalyticspage.PNG)
+
+### Enroll Course
+![Course enroll Page](./images/courseenroll.PNG)
+
+## VIDEO DEMO
+[Watch the video](./videos/loom-video.mp4)
