@@ -91,5 +91,20 @@ npm run dev
 
 ## APP INTERFACES
 
+### Teacher Dashboard
 ![Teacher Dashboard](./images/teacherdashboard.PNG)
 
+### Course Browse Page
+![Browse Page](./images/browsepage.PNG)
+
+### Teacher Page
+![Teacher Page](./images/teacherpage.PNG)
+
+### Course Setup Page
+![Course Setup Page](./images/coursesetup.PNG)
+
+### Chapter Setup Page
+![Chapter Setup](./images/chaptersetup.PNG)
+
+### Teacher Analytics Page
+![Analytics Page](./images/teacheranalyticspage.PNG)
