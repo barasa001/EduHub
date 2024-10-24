@@ -88,3 +88,8 @@ npx prisma db push
 ```shell
 npm run dev
 ```
+
+## APP INTERFACES
+
+![Teacher Dashboard](./images/teacherdashboard.PNG)
+
