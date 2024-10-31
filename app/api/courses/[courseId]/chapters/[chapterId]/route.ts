@@ -146,7 +146,7 @@ export async function PATCH(
         if (!existingMuxData.assetId) {
           console.error("assetId is undefined for existing mux data.");
         } else {
-          await mux.video.assets.del(existingMuxData.assetId);
+          await mux.video.assets.delete(existingMuxData.assetId);
         }
 
         await db.muxData.delete({
