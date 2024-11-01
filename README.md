@@ -123,6 +123,6 @@ The project has been deployed on Render
 [https://sbweduhub.onrender.com]
 
 ## VIDEO DEMO
-[Watch the video](https://www.loom.com/share/de6fc3c8c2d2419abbdd2eafafaebe43?sid=388aebc1-b33a-42eb-bc53-36daf6ed979a)
+https://www.loom.com/share/de6fc3c8c2d2419abbdd2eafafaebe43?sid=388aebc1-b33a-42eb-bc53-36daf6ed979a
 
 
