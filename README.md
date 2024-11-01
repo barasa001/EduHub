@@ -120,7 +120,8 @@ npm run dev
 
 ## DEPLOYMENT
 The project has been deployed on Render
-[https://sbweduhub.onrender.com]
+
+https://sbweduhub.onrender.com
 
 ## VIDEO DEMO
 https://www.loom.com/share/de6fc3c8c2d2419abbdd2eafafaebe43?sid=388aebc1-b33a-42eb-bc53-36daf6ed979a
