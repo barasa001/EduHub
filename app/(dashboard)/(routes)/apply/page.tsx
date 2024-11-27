@@ -1,4 +1,5 @@
 "use client";
+
 import { ChangeEvent, FormEvent, useState } from "react";
 
 const ApplyPage = () => {
@@ -9,12 +10,17 @@ const ApplyPage = () => {
         university: "",
         degree: "",
     });
+
     const [files, setFiles] = useState<{
         idDocument: File | null;
         graduationDocument: File | null;
+        transcript: File | null;
+        recommendationLetter: File | null;
     }>({
         idDocument: null,
         graduationDocument: null,
+        transcript: null,
+        recommendationLetter: null,
     });
 
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -27,7 +33,7 @@ const ApplyPage = () => {
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
-        // Handle form submission logic here (e.g., send data to the server)
+        // Handle form submission logic here
         console.log("Form Data:", formData);
         console.log("Uploaded Files:", files);
         alert("Application submitted successfully!");
@@ -96,7 +102,7 @@ const ApplyPage = () => {
                     </div>
                 </div>
 
-                {/* Document Upload */}
+                {/* Document Upload Sections */}
                 <div className="mt-6">
                     <label className="block text-sm font-medium mb-1">Upload ID Document</label>
                     <input
@@ -119,6 +125,40 @@ const ApplyPage = () => {
                     <input
                         type="file"
                         name="graduationDocument"
+                        accept=".jpg,.png,.pdf"
+                        onChange={handleFileChange}
+                        className="block w-full text-sm text-gray-500
+                        file:mr-4 file:py-2 file:px-4
+                        file:rounded-full file:border-0
+                        file:text-sm file:font-semibold
+                        file:bg-blue-50 file:text-blue-700
+                        hover:file:bg-blue-100"
+                        required
+                    />
+                </div>
+
+                <div className="mt-4">
+                    <label className="block text-sm font-medium mb-1">Upload Transcript</label>
+                    <input
+                        type="file"
+                        name="transcript"
+                        accept=".jpg,.png,.pdf"
+                        onChange={handleFileChange}
+                        className="block w-full text-sm text-gray-500
+                        file:mr-4 file:py-2 file:px-4
+                        file:rounded-full file:border-0
+                        file:text-sm file:font-semibold
+                        file:bg-blue-50 file:text-blue-700
+                        hover:file:bg-blue-100"
+                        required
+                    />
+                </div>
+
+                <div className="mt-4">
+                    <label className="block text-sm font-medium mb-1">Upload Recommendation Letter</label>
+                    <input
+                        type="file"
+                        name="recommendationLetter"
                         accept=".jpg,.png,.pdf"
                         onChange={handleFileChange}
                         className="block w-full text-sm text-gray-500
